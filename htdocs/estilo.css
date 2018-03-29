@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+main {
+	width: 1200px;
+	overflow: hidden;
+	margin: 0 auto;/*esta propr. centraliza o main, juntamente com a largura*/
+	}
+header {
+	width: 1060px;/*este valor foi compensado em função do padding*/
+	height: 585px;
+	background-color: #A7D0ED;
+	padding: 70px;     /*espaçamento interno ao elemento*/
+	font-family: 'Shadows Into Light Two', cursive;
+	background-image:url("imagens/chicago5.jpg");
+	background-repeat:no repeat;	
+}
+/*Elemento pai e filho*/
+header > h1 {
+	font-size: 80px;
+	color: #fff;
+	margin: 0;
+	border-bottom: #CC0303 solid 25px;
+	width: 480px;
+	text-align:center;
+	margin-top:325px;
+
+}
+header > h2 {
+	text-align: center;
+	font-size: 36px;
+	color: #fff;
+	margin: 0;
+	width: 480px;
+
+	
+}
+/*Borda precisa de  cor, estilo e espessura para existir*/
+nav {
+	width: 1200px;
+	height: 100px;
+	font-family: 'Quicksand', sans-serif;
+	border-bottom: #b22d00 5px solid;
+	margin-bottom: 20px;
+}
+/*estilo de lista "nome para tirar as bolinhas"*/
+nav>ul {
+	list-style-type: none;
+	padding: 0;
+}
+/*Modo de exibir um certo item*/
+nav>ul>li {
+	display: inline-block;
+}
+/*a seguir, o estilo para os 3 estados de um link, sendo que estas declarações dever ser feitas nesta ordem: link, visited e hover*/
+nav>ul>li>a:link {
+	font-size: 35px;
+	color: #b22d00;
+	padding: 10px 50px;
+	text-decoration: none;
+	margin-top:3px;
+}
+/*Estado natural de quando um link é acessado*/
+nav>ul>li>a:visited {
+	color: #b22d00;
+}
+/*Quando o mouse passa por cima*/
+nav>ul>li>a:hover {
+	color: #fff;
+	background-color:#0A0A0A;
+}
+#trabalhos {
+	width: 1060px;
+	height: 1060px;
+	padding: 50px 70px;
+	
+}
+.titulo-secao {
+	color:#CC0303 ;
+	font-size: 50px;
+	text-align:center;	
+}
+.texto{
+	font-size:23px;
+	color:#5f5f5f;
+}
+.titulo-futuro{
+	color: #CC0303 ;
+	font-size: 50px;
+	text-align:center;	
+}
+.titulo-sobre{
+	font-size:50px;
+	text-align:center;
+	color:#CC0303;
+}
+
+.esquerda {
+	float: left
+}
+.direita {
+	float: right;
+	 width:405px;
+	 height:276px;
+}
+.parque{
+	text-align:center;
+	margin-top:35px;	
+}
+/*Hierarquia de elementos, pai "trabalho" e filho "p"*/
+#historia > p {
+	font-size: 23px;
+	color: #5f5f5f;
+	margin-bottom: 85px;
+}
+#clientes {
+	width: 1060px;
+	height: 360px;
+	background-color: #c9a84b;
+	padding: 50px 70px;
+}
+
+#contatos {
+	width: 1060px;
+	height: 370px;
+	padding: 50px 70px;
+}
+#contatos>article {
+	width: 400px;
+	height: 300px;
+	color: #007cbf;
+	font-size: 25px;
+}
+#contatos>article>p {
+	text-align: center;
+	font-size: 23px;
+	margin-left: -103px;
+}
+#contatos>form {
+	width: 550px;
+	height: 350px;
+	background-color: #9cd1eb;
+	padding: 30px;
+	font-size: 35px;
+	color: #922022;
+	font-weight: bolder;
+	margin-top: 57px;
+}
+#contatos>form>p {
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+#oqfzr{
+	font-size:23px;
+	color:#5f5f5f;
+
+	
+	
+	
+}
+/*[] Filtro, novo seletor*/
+#contatos>form>p>input[type=text], #contatos>form>p>input[type=email] {
+	width: 546px;
+	height: 40px;
+	border-radius: 5px;
+	border: #922022 solid 2px;
+	background-color: #9cd1eb;
+	font-size: 25px;
+}
+.botao {
+	width: 550px;
+	height: 65px;
+	background-color: #922022;
+	color: #fff;
+	font-size: 29px;
+	border: none;
+	margin-top: 45px;
+	border-radius: 5px;
+}
+footer {
+	width: 100%;
+	height: 50px;
+	background-color: #D1CACA;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 20px;
+	color: #fff;
+}
